@@ -9,7 +9,7 @@ spec:
     - https://github.com/kdmodder/argocd-demos.git
   destinations:                # Which clusters/namespaces apps in this Project can target
     - namespace: frontend
-      server: <added_argocd_cluster_server_url>  # Target cluster server url
+      server: https://kubernetes.default.svc  # Target cluster server url
   clusterResourceWhitelist:    # Which cluster-wide resources are allowed (e.g., CRDs)
     - group: "*"               # '*' means allow all groups
       kind: "*"                # '*' means allow all kinds
